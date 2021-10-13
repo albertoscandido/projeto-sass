@@ -16,10 +16,7 @@
     @include font-size(24px);
     color: $dark-grey;
     letter-spacing: 1px;
-    margin-bottom: 10px;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
+    @extend %half-margin-top, %default-margin-bottom, %no-margin-left, %no-margin-right;
   }
 
   .breadcrumb {
@@ -54,7 +51,7 @@
   }
 
   &__date {
-    margin: 0 10px;
+    @extend %no-margin-top, %no-margin-bottom, %default-margin-left, %default-margin-right;
     @include font-size(12px);
     font-style: italic;
   }
